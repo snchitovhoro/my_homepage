@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../my_homepage\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\E5540\Desktop\MIU\edu\CS401 MPP\my_homepage\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
