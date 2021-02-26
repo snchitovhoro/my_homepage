@@ -1,0 +1,30 @@
+*{
+    background-color: burlywood;
+
+}
+
+.name{
+    color: blue;
+    font-weight: bolder;
+}
+
+.univ{
+    color: green;
+    font-weight: lighter;
+}
+
+.aka{
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.major{
+    color: aqua;
+    font-weight: bolder;
+}
+
+li{
+    color: tomato;
+    font-weight: lighter;
+    list-style-type: lower-roman;
+}
