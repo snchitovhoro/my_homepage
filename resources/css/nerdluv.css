@@ -1,0 +1,20 @@
+*{
+    font-size: 16px ;
+    color: black;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.form{
+    color: red;
+    border: grey;
+}
+.headerlabel{
+    background-color: #404040;
+    }
+
+.submit{
+    background-color: deeppink;
+   }
