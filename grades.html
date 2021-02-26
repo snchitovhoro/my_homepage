@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="resources/css/grades.css">
+        <title>Retrieve Grade</title>
+    </head>
+    <body>
+    <form action="https://mumstudents.org/params.php">
+        <div>
+            <div>
+                <label class="headerlabel">Retrieve your grade</label><br/><br/>
+            </div>
+            <label for="name">Name</label>
+            <input id = "name" type="text" size="16"><br/>
+
+            <label for="studentId" >Student ID</label>
+            <input type="number" size="6" maxlength="6" value="Student ID" id="studentId"> <br/>
+
+            <label for="assignment">Favourate OS</label>
+            <select id = "assignment" >
+                <option value="Homepage">Homepage</option>
+                <option value="About Me">About Me</option>
+                <option value="Recipe">Recipe</option>
+                <option value="Movie Review">Movie Review</option>
+
+                <option value="Grades">Grades"</option>
+                <option value="Nerdluv">Nerdluv</option>
+            </select><br/>
+
+            <label for="sure" >Are you sure you want to check your grade</label>
+            <input type="checkbox" id="sure"></br>
+
+            <input type="submit" value="Get Grade!" formmethod="post">
+        </div>
+    </form>
+
+    <footer>
+        <a href="http://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"/></http:> <p>Valid HTML5</p>
+        </a>
+        <a href ="http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png"/>Valid CSS </a>
+    </footer>
+    </body>
+</html>
