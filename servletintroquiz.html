@@ -8,22 +8,115 @@
 <ol>
     <li>
         <p class="q">
-1. What is the difference between a web server and a web container?
+            <em>
+            1. What is the difference between a web server and a web container?
+            </em>
+        </p>
+        <p class="a"> A Web Server consits of several parts that control how web users access hosted files
+            through a protocol like HTTP.
+            Meanwhile a Web Container provides the runtime environment to web applications providing
+            naming context and manages the life cycle of a web app.
+            A Web Container is part of the web server.
+        </p>
+
+    </li>
+    <li>
+        <p>
+            <em>
+                2. What is a servlet?
+            </em>
         </p>
         <p class="a"> According to Oracle.com A servlet is a Java programming language class
             that is used to extend the capabilities of servers that host applications accessed
             by means of a request-response programming model.
         </p>
-
     </li>
-2. What is a servlet?
-3. How do web servers and web containers interact with servlets?
-4. Who creates request objects?
-5. What are the states in the servlet lifecycle?
-6. Who calls init and when?
-7. Which of init, service, and doGet should you override?
-8. In what sense are servlets multi-threaded?
-9. What are the implications of this for servlet instance variables?
+
+    <li>
+        <p>
+            <em>
+3.          How do web servers and web containers interact with servlets?
+            </em>
+        </p>
+        <p class="a"> Any request that comes through goes through the web server, a web Server is very
+            efficient in serving static files, when some logic is needed or we serve some dynamic
+            content in the application, then this will be delegated to servlets.
+        </p>
+    </li>
+    <li>
+        <p>
+            <em>
+4.          Who creates request objects?
+            </em>
+        </p>
+
+        <p class="a"> The web container creates the request objects.
+        </p>
+    </li>
+    <li>
+        <p>
+            <em>
+        5. What are the states in the servlet lifecycle?
+            </em></p>
+        <p class="a"> There are 3 states in the servlet lifecycle
+            <ol>
+        <li>New state, the servlet is in a new state when the servlet instance is created</li>
+        <li>Ready state, the servlet is in a ready state after the init method has been invoked.
+            All the work that the servlet does is invoked in this state</li>
+        <li>End state, when the web container is shut down it invokes the destroy method,
+            when this happens, the servlet is in the end state </li>
+    </ol>
+        </p>
+    </li>
+    <li>
+        <p>
+            <em>
+        6. Who calls init and when?
+            </em>
+        </p>
+        <p class="a"> The web container calls the init method only once after creating the servlet instance.
+            The init method is used to initialise the servlet
+        </p>
+    </li>
+    <li>
+        <p>
+            <em>
+    7. Which of init, service, and doGet should you override?
+            </em>
+        </p>
+        <p class="a"> Override doGet, this is where all data processing to answer the request is done. <br/>
+            The init method is called by the web container to put the servlet into service,you generally
+            override this method only if you have resources like database connections that need to be
+            initialised, in this case you override the init() and call the super.init(servletConfig) inside
+            this method<br/>
+            The service method routes the incoming request to either the doGet or doPost methods
+            depending the HTTP transfer method of the request so generally there is no need to
+            override this method</br>
+            The init method
+        </p>
+    </li>
+    <li>
+        <p>
+            <em>
+        8. In what sense are servlets multi-threaded?
+            </em>
+        </p>
+        <p class="a"> Multiple requests to the same servlet are executed in parallel, i.e. a new thread
+            of the service method is called by the web container for every request and executed in parallel.        </p>
+    </li>
+    <li>
+        <p>
+            <em>
+        9. What are the implications of this for servlet instance variables?
+            </em>
+        </p>
+
+        <p class="a"> If the servlet instance variables are to be accessed by the service method,
+            they need to be thread safe, else the service method should not access these member variables
+            at all.
+
+        </p>
+    </li>
 </ol>
 </body>
 </html>
