@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/resources/css/quiz.css">
+    <title>JSPIntroQuiz</title>
+</head>
+<body>
+<ol>
+    <li>
+        <p class="q">
+            <em>
+            What is the main value of Java Server Pages?
+            </em>
+        </p>
+        <p class="a">Java Server Pages facilitates the creation of web pages by mixing of dynamic
+            and static content in a platform independent way. JSPs have access to the entire family of
+        java APIs</p>
+    <li>
+        <p class="q"> <em> How are JSP pages related to servlets?</em></p>
+        <p>Java Server Pages are complementary to servlets, a JSP page is compiled into a servlet</p>
+    <li>
+    <p class="q"><em>How are JSP pages related to HTML?</em></p>
+    <p>JSP consists HTML markup embeded in JSP tags. When the JSp file is processed on the server,
+        the HTML is rendered as a web page</p>
+    </li>
+    <li><p class="q"><em>Give an example of a JSP scriptlet and show how it will look in the JSP servlet .</em></p>
+    <p><% out.print("hello jsp"); %>  </p>
+    </li>
+    </li>
+    <li><p class="q"><em>Give an example of a JSP declaration and show how it will look in the JSP servlet.</em></p>
+        <p><%! int n=0; %> </p>
+    </li>
+    <li><p class="q"><em>Give an example of a JSP comment and show how it will look in the JSP servlet.</em></p>
+        <p><%-- This is a JSP comment --%></p>
+    </li>
+    <li><p class="q"><em>Give an example of a JSP expression and show how it will look in the JSP servlet.</em></p>
+        <p><%= "welcome to jsp" %>  </p>
+    </li>
+
+    </li>
+    <li><p class="q"><em>Give an example of a JSP directive and show how it will look in the JSP servlet.</em></p>
+        <p><%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%></p>
+    </li>
+
+    <li><p class="q"><em>Explain how an EL expression is evaluated.</em></p>
+        <p>EL supports both immediate and deferred evaluation of expressions <br/>
+        </p></li>
+    <li><p class="q"><em>Explain how servlet attributes are involved in EL expressions.</em></p>
+        <p></p></li>
+    <li><p class="q"><em>Explain how servlets and JSPs use request dispatch to interact.</em></p>
+        <p></p></li>
+</ol>
+</body>
+</html>
